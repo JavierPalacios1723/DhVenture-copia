@@ -1,14 +1,12 @@
 const express = require('express')
 const router = express.Router(); 
+const authController = require('../controllers/authentication')
+
 
 /*  (/auten) */ 
-router.get('/inicio', (req, res) =>{
-    res.send('rrrrrrr')    /*prueba de funcionamiento*/ 
-})
+router.get('/inicio', authController.login)
 
-router.get('/registro', (req, res) =>{
-res.send('jojsodosos')   /*prueba de funcionamiento*/ 
-})
+router.get('/registro',authController.register)
 
 
 
