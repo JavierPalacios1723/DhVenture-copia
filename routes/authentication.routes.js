@@ -4,9 +4,9 @@ const authController = require('../controllers/authentication')
 
 
 /*  (/auten) */ 
-router.get('/inicio', authController.login)
+router.get('/inicio', authController.login);
 
-router.get('/registro',authController.register)
+router.get('/registro',authController.register);
 
 
 
