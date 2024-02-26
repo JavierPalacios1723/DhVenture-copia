@@ -1,3 +1,3 @@
 module.exports = {
-    getCart: require('./cart.controller'),
+    getCart: require("./cart.controller"),
 };
